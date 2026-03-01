@@ -17,6 +17,7 @@
   "scripts": {
     "build": "bun build ./src/cli.tsx --target=node --outfile ./dist/paperless-cli && chmod +x ./dist/paperless-cli",
     "dev": "bun run ./src/cli.tsx",
+    "release:artifact": "./scripts/build-release-artifact.sh",
     "start": "./dist/paperless-cli"
   },
   "devDependencies": {
