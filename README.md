@@ -38,10 +38,10 @@ bun run build
 The repository includes a formula template at [Formula/paperless-cli.rb](/Users/julian/p/paperless-cli/Formula/paperless-cli.rb). For each release:
 
 1. Tag and publish a GitHub release for the new version.
-2. Download the release tarball and compute its SHA-256.
-3. Update the formula `url`, `sha256`, and `license`.
+2. Use the uploaded release asset `paperless-cli-<version>.tar.gz` and compute its SHA-256.
+3. Update the formula `version`, `sha256`, and `license`.
 4. Commit the formula to your tap repository.
 
-This template already points at `j4n-e4t/paperless-cli`.
+This template already points at the pushed release artifact for `j4n-e4t/paperless-cli`, not the source tarball.
 
 The formula test runs `paperless-cli --version`, so that command should remain non-interactive.
